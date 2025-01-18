@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+  .headerItem {
+    @apply px-2 border border-transparent hover:border-white duration-300 cursor-pointer flex items-center justify-center h-[70%];
+  }
+  .link {
+    @apply border border-white/10 hover:border-amazonYellowDark hover:text-white py-1 px-2 cursor-pointer duration-200;
+  }
+  .footerLink {
+    @apply hover:underline text-sm hover:text-gray-100 cursor-pointer mb-2 duration-150;
+  }
+  .hoverEffect {
+    @apply ease-in-out duration-300;
+  }
+}
